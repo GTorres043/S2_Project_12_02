@@ -11,9 +11,10 @@
    Filename: hg_report.js
 	
 */
-//this creates a table 
+//this creates a table for the product information
 var gameReport = "<h1>" + itemTitle + "</h1> <h2>By:" + itemManufacturer + "</h2>" + "<img src='hg_" + itemID + ".png' alt='id' id='gameImg'/>" + "<table>" + "<tr><th>Product ID</th><td>" + itemID + "</td></tr>" + "<tr><th>List price</th><td>" + itemPrice + "</td></tr>" + "<tr><th>Platform</th><td>" + itemPlatform + "</td></tr>" + "<tr><th>ESRB Rating</th><td>" + itemESRB + "</td></tr>" + "<tr><th>Condition</th><td>" + itemCondition + "</td></tr>" + "<tr><th>Release</th><td>" + itemRelease + "</td></tr>" + "</table>" + itemSummary;
 
+//calls in the report of the game and details about the game that is being sold
 document.getElementsByTagName("article")[0].innerHTML = gameReport;
 
 var ratingSum = 0;
